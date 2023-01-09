@@ -102,7 +102,7 @@ resource "google_compute_instance_group_manager" "default" {
 
   provisioner "local-exec" {
     when    = "destroy"
-    command = "${var.local_cmd_destroy}"
+    command = ":"
   }
 
   provisioner "local-exec" {
@@ -179,7 +179,7 @@ resource "google_compute_region_instance_group_manager" "default" {
 
   provisioner "local-exec" {
     when    = "destroy"
-    command = "${var.local_cmd_destroy}"
+    command = ":"
   }
 
   provisioner "local-exec" {
